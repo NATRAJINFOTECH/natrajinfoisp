@@ -16,10 +16,14 @@
       padding: 15px 20px;
     }
 
-    .welcome-text {
-      font-size: 1rem;
-      color: white;
-      margin-top: 10px;
+    .company-name h1,
+    .company-name h6 {
+      margin: 0;
+    }
+
+    .welcome-text p,
+    .welcome-text h6 {
+      margin: 0;
     }
 
     .carousel-img {
@@ -30,6 +34,27 @@
     @media (min-width: 768px) {
       .carousel-img {
         height: 450px;
+      }
+
+      .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+
+      .company-name {
+        flex: 1;
+      }
+
+      .welcome-text {
+        flex: 1;
+        text-align: center;
+      }
+
+      .menu-dropdown {
+        flex: 0 0 auto;
+        text-align: right;
       }
     }
 
@@ -51,33 +76,36 @@
   </style>
 </head>
 <body>
+
   <!-- Header -->
   <div class="header-container">
-    <div class="container">
-      <div class="row align-items-center text-center text-md-start">
-        <div class="col-md-6">
-          <h1 class="mb-0">NATRAJ INFOTECH</h1>
-          <h6>(Airtel Xstream Fiber)</h6>
-        </div>
-        <div class="col-md-4 mt-3 mt-md-0">
-          <p class="welcome-text mb-0">WELCOME TO THE FASTEST INTERNET SERVICE IN GANDEVI</p>
-          <h6 class="welcome-text mb-0">Ghanchiwad, Gandevi</h6>
-        </div>
-        <div class="col-md-2 mt-3 mt-md-0 text-md-end">
-          <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              MENU
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="about us.html">ABOUT US</a></li>
-              <li><a class="dropdown-item" href="OUR BROADBAND PLANS.HTML">OUR PLANS</a></li>
-              <li><a class="dropdown-item" href="INQUIRY FORM.HTML">INQUIRY FORM</a></li>
-              <li><a class="dropdown-item" href="galary.html">GALLERY</a></li>
-              <li><a class="dropdown-item" href="airtel black.html">AIRTEL BLACK</a></li>
-            </ul>
-          </div>
+    <div class="container header-flex">
+      
+      <div class="company-name mb-3 mb-md-0">
+        <h1>NATRAJ INFOTECH</h1>
+        <h6>(Airtel Xstream Fiber)</h6>
+      </div>
+
+      <div class="welcome-text mb-3 mb-md-0">
+        <p class="fw-bold">WELCOME TO THE FASTEST INTERNET SERVICE IN GANDEVI</p>
+        <h6>Ghanchiwad, Gandevi</h6>
+      </div>
+
+      <div class="menu-dropdown">
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            MENU
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="about us.html">ABOUT US</a></li>
+            <li><a class="dropdown-item" href="OUR BROADBAND PLANS.HTML">OUR PLANS</a></li>
+            <li><a class="dropdown-item" href="INQUIRY FORM.HTML">INQUIRY FORM</a></li>
+            <li><a class="dropdown-item" href="galary.html">GALLERY</a></li>
+            <li><a class="dropdown-item" href="airtel black.html">AIRTEL BLACK</a></li>
+          </ul>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -130,5 +158,6 @@
       📧 <a href="mailto:natrajinfotech94@gmail.com">natrajinfotech94@gmail.com</a>
     </div>
   </footer>
+
 </body>
 </html>
